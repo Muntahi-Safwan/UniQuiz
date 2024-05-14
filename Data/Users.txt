@@ -1,0 +1,8 @@
+23-53117-3	jawan	CSE	Jayna Tanjum	jayna3@tanjum.com	1.625
+Student ID	Password	Department	Full Name	Email	0.0
+23-53103-3	abdullah	CSE	Tasnuba Tabassum	tasnuba@tabassum.com	2.0
+23-53108-3	abhi	CSE	Mubin Hasan	mubin@hasan.com	2.0
+23-53107-3	oishi	CSE	Mishal Sheikh	mishal@sheikh.com	0.0
+23-53119-3	1234	CSE	Muntahi Safwan	muntahi1@safwan.com	3.75
+Student ID	Password	Department	Full Name	Email	0.0
+Student ID	Password	Department	Full Name	Email	0.0
