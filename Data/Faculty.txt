@@ -1,2 +1,6 @@
-Faculty ID	Password	Mobile Number	Full Name	Email
 137492	password	01648390282	Tasnuba Tabassum	tasnuba@tabassum.com
+faculty1	pass	01234752896	Rafiul Haque	rafiul@haque.com
+faculty2	pass1	01485279657	Numeri Sattar	numeri@sattar.com
+23-90	1234	0123458967	Risala Ahmed	risala@gmail.com
+56-90	5678	01745678945	Sultan Mahmud	sultan@gmail.com
+12-980	4567	012345689	Abdulla Noman	noman@gmail.com

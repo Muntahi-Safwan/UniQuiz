@@ -80,6 +80,15 @@ public class SelectCourseDark extends JFrame {
 		backBtn.setBackground(Color.white);
 		backBtn.setBounds(35,20,56,56);
 		backBtn.setBorderPainted(false);
+        backBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                setVisible(false);
+                LoginDark o = new LoginDark();
+                o.setVisible(true);
+            }
+        });
+
+
 
         JLabel backBtnImg = new JLabel(new ImageIcon("./assets/backBtn-dark.png"));
         backBtnImg.setBounds(35,20,56,56);
@@ -150,8 +159,6 @@ public class SelectCourseDark extends JFrame {
 		course3Btn.setBorderPainted(false);
         course3Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE110();
-                
                 setVisible(false);
                 DSDark o = new DSDark(user);
                 o.setVisible(true);
@@ -191,11 +198,6 @@ public class SelectCourseDark extends JFrame {
         select.setIcon(selectImg);
         select.setBounds(365, 5, 250, 250);
 
-        // JLabel text1 = new JLabel("Hello Name");
-        // text1.setFont(new Font("Roboto", Font.BOLD, 30));
-        // text1.setBounds(365, 200, 250, 250);
-        // https://colors.muz.li/palette/B8E4FA/81a6af/eefcff/ddf9ff/ffffff 
-
         JLabel text2 = new JLabel("Select Course");
         text2.setFont(new Font("Roboto", Font.BOLD, 44));
         text2.setBounds(365, 245, 333, 61);
@@ -203,13 +205,6 @@ public class SelectCourseDark extends JFrame {
         text2.setAlignmentX(JLabel.CENTER_ALIGNMENT);
         text2.setForeground(new Color(0xB8E4FA));
 
-
-        // JLabel text3 = new JLabel("Name: " + user.name);
-        // text3.setFont(new Font("Roboto", Font.BOLD, 30));
-        // text3.setBounds(100, 200, 300, 100);
-        // text3.setBackground(new Color(0xB8E4FA));
-        // text3.setAlignmentX(JLabel.CENTER_ALIGNMENT);
-        // text3.setForeground(Color.black);
         
         JButton button1 = new JButton("Introduction to Programming");
         button1.setBounds(20, 360, 454, 81);

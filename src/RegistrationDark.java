@@ -2,9 +2,6 @@ package src;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
-import java.time.*;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class RegistrationDark extends JFrame {
@@ -127,12 +124,12 @@ public class RegistrationDark extends JFrame {
         submit.setFocusPainted(false);
 
         JButton Back = new JButton("Back");
-        submit.setBounds(103, 594, 175, 47);
-        submit.setFont(new Font("Verdana", Font.BOLD, 25));
+        Back.setBounds(103, 594, 175, 47);
+        Back.setFont(new Font("Verdana", Font.BOLD, 25));
         // submit.setBackground(new Color(0xB8E4FA));
-        submit.setBackground(new Color(0xB8E4FA));
-        submit.setForeground(new Color(0x070121));
-        submit.setFocusPainted(false);
+        Back.setBackground(new Color(0xB8E4FA));
+        Back.setForeground(new Color(0x070121));
+        Back.setFocusPainted(false);
         // submit.setBorder(new RoundedBorder(30));
         // submit.setBorderPainted(false);
 
@@ -161,33 +158,9 @@ public class RegistrationDark extends JFrame {
                         JOptionPane.showMessageDialog(null, "Wrong Captcha.", "Warning!", JOptionPane.WARNING_MESSAGE);
                     } else {
 
-                        try {
-                            File file = new File(".\\Data\\UserData.txt");
-                            if (!file.exists()) {
-                                file.createNewFile();
-                            }
-                            FileWriter fw = new FileWriter(file, true);
-                            BufferedWriter bw = new BufferedWriter(fw);
-                            PrintWriter pw = new PrintWriter(bw);
-
-                            LocalDateTime myDateObj = LocalDateTime.now();
-                            DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("HH:mm a, dd/MM/yyyy");
-
-                            String timeAndDate = myDateObj.format(myFormatObj);
-
-                            pw.println("Student ID : " + tf1);
-                            pw.println("Password : " + tf2);
-                            pw.println("Full Name : " + tf3);
-                            pw.println("Email : " + tf4);
-                            pw.println("Department : " + tf5);
-                            pw.println("Time & Date : " + timeAndDate);
-                            pw.println("===============================================");
-                            pw.close();
-
-                        } catch (Exception ex) {
-                            System.out.print(ex);
-                        }
-
+                        User user = new User(tf1, tf2, tf3, tf4, tf5);
+                        user.addAccount();
+                        
                         JOptionPane.showMessageDialog(null, "Registration Successfully Completed.",
                                 "Registration Complete", JOptionPane.WARNING_MESSAGE);
                         setVisible(false);
