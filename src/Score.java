@@ -12,6 +12,7 @@ public class Score extends JFrame implements ActionListener {
     Person p;
     double current;
     String cgpaPrevious;
+    int lineNumber;
 
     public Score(Person user, int score) {
         this.p = user;
@@ -31,10 +32,11 @@ public class Score extends JFrame implements ActionListener {
 
             for (int lineNumber = 0; scanner.hasNextLine(); lineNumber++) {
                 String line = scanner.nextLine();
-                System.out.println(lineNumber);
+                
                 if (line.contains(searchString)) {
                     String[] value = line.split("\t");
                     this.cgpaPrevious = value[5];
+                    this.lineNumber = lineNumber;
                 }
             }
             scanner.close();
@@ -64,15 +66,15 @@ public class Score extends JFrame implements ActionListener {
             double previous = this.current;
             calculate = ((previous * 3) + (current * 3)) / 6;
         }
-        System.out.println("calculate" + calculate);
+        
 
         try {
             File file = new File(filePath);
             Scanner scanner = new Scanner(file);
 
             StringBuilder fileContent = new StringBuilder();
-            int lineNumber = 0;
-            System.out.println(lineNumber);
+            lineNumber = 0;
+            
             while (scanner.hasNextLine()) {
                 lineNumber++;
                 String line = scanner.nextLine();
@@ -82,7 +84,6 @@ public class Score extends JFrame implements ActionListener {
                     values[5] = cgpa;
                     line = String.join("\t", values);
                 }
-                // System.out.println(lineNumber);
                 fileContent.append(line).append("\n");
             }
 
@@ -113,7 +114,7 @@ public class Score extends JFrame implements ActionListener {
         select.setBounds(362, 70, 300, 300);
 
         JLabel heading = new JLabel("Submitted Successfully!!!");
-        heading.setBounds(337, 360, 400, 30);
+        heading.setBounds(337, 360, 430, 30);
         heading.setFont(new Font("Verdana", Font.BOLD, 28));
         heading.setVerticalTextPosition(JLabel.CENTER);
         heading.setHorizontalTextPosition(JLabel.CENTER);

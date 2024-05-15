@@ -225,7 +225,7 @@ public class AlgoQuizDark extends JFrame implements ActionListener {
                 }
             }
             setVisible(false);
-            new Score(p, score);
+            new ScoreDark(p, score);
         }
     }
     
@@ -280,7 +280,7 @@ public class AlgoQuizDark extends JFrame implements ActionListener {
                     }
                 }
                 setVisible(false);
-                Score s = new Score(p, score);
+                ScoreDark s = new ScoreDark(p, score);
                 s.setVisible(true);
             } else { // next button
                 if (groupoptions.getSelection() == null) {

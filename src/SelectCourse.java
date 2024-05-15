@@ -8,9 +8,12 @@ public class SelectCourse extends JFrame {
 
     public SelectCourse(Person user) {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("AIUB QuizHub");
-        this.setSize(1024, 720); 
+        this.setTitle("Select Course | UniQuiz");
+        this.setSize(1024, 720); // 480
         this.setResizable(false);
+        this.setLocationRelativeTo(null);
+        ImageIcon img = new ImageIcon("./assets/logo1.png");
+        this.setIconImage(img.getImage());
         
         ImageIcon selectImg = new ImageIcon("./assets/select.png");
         ImageIcon BackgroundImg = new ImageIcon("./assets/2.png");
@@ -44,9 +47,7 @@ public class SelectCourse extends JFrame {
 		profileBtn.setBounds(304,29,170,37);
 		profileBtn.setBorderPainted(false);
         profileBtn.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                // new CSE110();
-                System.out.println("CSE 110");
+            public void actionPerformed(ActionEvent e) {                
                 setVisible(false);
                 Profile o = new Profile(user);
                 o.setVisible(true);
@@ -66,8 +67,6 @@ public class SelectCourse extends JFrame {
 		logoutBtn.setBorderPainted(false);
         logoutBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE110();
-                System.out.println("Log Out");
                 setVisible(false);
                 Welcome o = new Welcome();
                 o.setVisible(true);
@@ -99,8 +98,6 @@ public class SelectCourse extends JFrame {
 		darkBtn.setBorderPainted(false);
 		darkBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE110();
-                System.out.println("CSE 110");
                 setVisible(false);
                 SelectCourseDark o = new SelectCourseDark(user);
                 o.setVisible(true);
@@ -121,7 +118,7 @@ public class SelectCourse extends JFrame {
         course1Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 IP o = new IP(user);
                 o.setVisible(true);
@@ -173,7 +170,7 @@ public class SelectCourse extends JFrame {
         course4Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 Algo o = new Algo(user);
                 o.setVisible(true);
@@ -224,10 +221,5 @@ public class SelectCourse extends JFrame {
         this.add(logo);
         this.add(background);
         this.setVisible(true);
-    }
-
-    public static void main(String[] args) {
-        SelectCourse s = new SelectCourse(new Person("23-53117-3"));
-        s.setVisible(true);
     }
 }

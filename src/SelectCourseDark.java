@@ -3,14 +3,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-
 public class SelectCourseDark extends JFrame {
 
     public SelectCourseDark(Person user) {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("AIUB QuizHub");
-        this.setSize(1024, 720); 
+        this.setTitle("Select Course | UniQuiz");
+        this.setSize(1024, 720); // 480
         this.setResizable(false);
+        this.setLocationRelativeTo(null);
+        ImageIcon img = new ImageIcon("./assets/logo1.png");
+        this.setIconImage(img.getImage());
         
         ImageIcon selectImg = new ImageIcon("./assets/select.png");
         ImageIcon BackgroundImg = new ImageIcon("./assets/4.png");
@@ -46,7 +48,7 @@ public class SelectCourseDark extends JFrame {
         profileBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 Profile o = new Profile(user);
                 o.setVisible(true);
@@ -66,8 +68,6 @@ public class SelectCourseDark extends JFrame {
 		logoutBtn.setBorderPainted(false);
         logoutBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE110();
-                System.out.println("Log Out");
                 setVisible(false);
                 Welcome o = new Welcome();
                 o.setVisible(true);
@@ -95,7 +95,7 @@ public class SelectCourseDark extends JFrame {
 		 darkBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 SelectCourse o = new SelectCourse(user);
                 o.setVisible(true);
@@ -116,7 +116,7 @@ public class SelectCourseDark extends JFrame {
         course1Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 IPDark o = new IPDark(user);
                 o.setVisible(true);
@@ -151,7 +151,7 @@ public class SelectCourseDark extends JFrame {
         course3Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 DSDark o = new DSDark(user);
                 o.setVisible(true);
@@ -170,7 +170,7 @@ public class SelectCourseDark extends JFrame {
         course4Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 AlgoDark o = new AlgoDark(user);
                 o.setVisible(true);
@@ -221,7 +221,7 @@ public class SelectCourseDark extends JFrame {
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 IPDark o = new IPDark(user);
                 o.setVisible(true);
@@ -253,11 +253,9 @@ public class SelectCourseDark extends JFrame {
         button3.setAlignmentY(JButton.CENTER_ALIGNMENT);
         button3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE112();
                 setVisible(false);
                 DSDark ds = new DSDark(user);
                 ds.setVisible(true);
-                System.out.println("CSE 112");
             }
         });
 
@@ -270,47 +268,12 @@ public class SelectCourseDark extends JFrame {
         button4.setAlignmentY(JButton.CENTER_ALIGNMENT);
         button4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE113();
                 setVisible(false);
                 AlgoDark al = new AlgoDark(user);
                 al.setVisible(true);
-                System.out.println("CSE 113");
             }
         });
 
-        // JButton button5 = new JButton("CSE 114");
-        // button5.setBounds(365, 500, 250, 40);
-        // button5.setFont(new Font("Roboto", Font.BOLD, 20));
-        // button5.setBackground(new Color(0xB8E4FA));
-        // button5.setForeground(Color.black);
-        // button5.setAlignmentX(JButton.CENTER_ALIGNMENT);
-        // button5.setAlignmentY(JButton.CENTER_ALIGNMENT);
-        // button5.addActionListener(new ActionListener() {
-        //     public void actionPerformed(ActionEvent e) {
-        //         // new CSE114();
-        //         System.out.println("CSE 114");
-        //     }
-        // });
-
-        // JButton button6 = new JButton("Exit");
-        // button6.setBounds(365, 500, 250, 40);
-        // button6.setFont(new Font("Roboto", Font.BOLD, 20));
-        // button6.setBackground(new Color(0xB8E4FA));
-        // button6.setForeground(Color.black);
-        // button6.setAlignmentX(JButton.CENTER_ALIGNMENT);
-        // button6.setAlignmentY(JButton.CENTER_ALIGNMENT);
-        // button6.addActionListener(new ActionListener() {
-        //     public void actionPerformed(ActionEvent e) {
-        //         System.exit(0);
-        //     }
-        // });
-
-
-        //this.add(button6);
-        // this.add(button4);
-        // this.add(button3);
-        // this.add(button2);
-        // this.add(button1);
         this.add(course4Btn);
         this.add(course4BtnImg);
         this.add(course3Btn);
@@ -320,25 +283,17 @@ public class SelectCourseDark extends JFrame {
         this.add(course1Btn);
         this.add(course1BtnImg);
         this.add(text2);
-        // this.add(text1);
-        //this.add(select);
-       //this.add(blurLabel);
-       this.add(darkBtn);
-       this.add(darkBtnImg);
-       this.add(backBtn);
-       this.add(backBtnImg);
-       this.add(logoutBtn);
-       this.add(navbarBtn2);
-       this.add(profileBtn);
-       this.add(navbarBtn1);
+        this.add(darkBtn);
+        this.add(darkBtnImg);
+        this.add(backBtn);
+        this.add(backBtnImg);
+        this.add(logoutBtn);
+        this.add(navbarBtn2);
+        this.add(profileBtn);
+        this.add(navbarBtn1);
         this.add(navbar);
         this.add(logo);
         this.add(background);
         this.setVisible(true);
-    }
-
-    public static void main(String[] args) {
-        SelectCourseDark s = new SelectCourseDark(new Person("23-53117-3"));
-        s.setVisible(true);
     }
 }

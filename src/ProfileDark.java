@@ -110,7 +110,7 @@ public class ProfileDark extends JFrame{
 		darkBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 Profile o = new Profile(user);
                 o.setVisible(true);

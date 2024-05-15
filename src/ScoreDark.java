@@ -32,7 +32,7 @@ public class ScoreDark extends JFrame implements ActionListener {
         select.setBounds(362, 70, 300, 300);
         
         JLabel heading = new JLabel("Submitted Successfully!!!");
-        heading.setBounds(337, 360, 400, 28);
+        heading.setBounds(337, 360, 430, 28);
         heading.setFont(new Font("Verdana", Font.BOLD, 30));
         heading.setVerticalTextPosition(JLabel.CENTER);
         heading.setHorizontalTextPosition(JLabel.CENTER);

@@ -40,7 +40,7 @@ public class Profile extends JFrame{
                     this.lineNumber = lineNumber;
                 }
             }
-            // System.out.println(lineNumber);
+            // (lineNumber);
             scanner.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -111,7 +111,7 @@ public class Profile extends JFrame{
 		darkBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // new CSE110();
-                System.out.println("CSE 110");
+                
                 setVisible(false);
                 ProfileDark o = new ProfileDark(user);
                 o.setVisible(true);
