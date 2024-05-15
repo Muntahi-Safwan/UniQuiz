@@ -99,7 +99,7 @@ public class OOP extends JFrame{
         button2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
-                SelectCourseDark o = new SelectCourseDark(user);
+                SelectCourse o = new SelectCourse(user);
                 o.setVisible(true);
             }
         });
