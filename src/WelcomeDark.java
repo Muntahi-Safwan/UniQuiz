@@ -24,14 +24,14 @@ public class WelcomeDark extends JFrame{
 
         JLabel logo = new JLabel();
         logo.setIcon(logoImg);
-        logo.setBounds(444, 29, 135, 135);
+        logo.setBounds(444, 14, 135, 135);
 
         JLabel txt1 = new JLabel("Welcome to");
         txt1.setFont(new Font("Verdana", Font.PLAIN, 30));
         txt1.setForeground(new Color(0xD0E7F7));
         txt1.setVerticalTextPosition(JLabel.CENTER);
         txt1.setHorizontalTextPosition(JLabel.CENTER);
-        txt1.setBounds(416, 176, 204, 42);
+        txt1.setBounds(410, 154, 210, 43);
 
 
         JLabel txt2 = new JLabel("UniQuiz");
@@ -39,11 +39,11 @@ public class WelcomeDark extends JFrame{
         txt2.setForeground(new Color(0xD0E7F7));
         txt2.setVerticalTextPosition(JLabel.CENTER);
         txt2.setHorizontalTextPosition(JLabel.CENTER);
-        txt2.setBounds(383, 218, 269, 85);
+        txt2.setBounds(375, 189, 306, 85);
 
         // Login Button
         JButton loginbtn = new JButton("Sign In");
-        loginbtn.setBounds(129, 327, 226, 56);
+        loginbtn.setBounds(272, 287, 226, 56);
         loginbtn.setFont(new Font("Verdana", Font.BOLD, 30));
         loginbtn.setBackground(new Color(0xD0E7F7));
         loginbtn.setForeground(new Color(0x071330));
@@ -60,7 +60,7 @@ public class WelcomeDark extends JFrame{
          
         // Sign Up Button
         JButton registerbtn = new JButton("Sign Up");
-        registerbtn.setBounds(399, 329, 226, 56);
+        registerbtn.setBounds(525, 287, 226, 56);
         registerbtn.setFont(new Font("Verdana", Font.BOLD, 30));
         registerbtn.setBackground(new Color(0xD0E7F7));
         registerbtn.setForeground(new Color(0x071330));
@@ -76,7 +76,7 @@ public class WelcomeDark extends JFrame{
 
         // Admin Button
         JButton teambtn = new JButton("Admin");
-        teambtn.setBounds(669, 325, 226, 56);
+        teambtn.setBounds(525, 358, 226, 56);
         teambtn.setFont(new Font("Verdana", Font.BOLD, 30));
         teambtn.setBackground(new Color(0xD0E7F7));
         teambtn.setForeground(new Color(0x071330));
@@ -89,6 +89,21 @@ public class WelcomeDark extends JFrame{
             }
         });
 
+        JButton FacultyBtn = new JButton("Faculty");
+        FacultyBtn.setBounds(272, 358, 226, 56);
+        FacultyBtn.setFont(new Font("Verdana", Font.BOLD, 30));
+        FacultyBtn.setBackground(new Color(0xD0E7F7));
+        FacultyBtn.setForeground(new Color(0x071330));
+        FacultyBtn.setFocusPainted(false);
+        FacultyBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                setVisible(false);
+                FacultyLogin frame = new FacultyLogin();
+                frame.setVisible(true);
+            }
+         });
+
+        this.add(FacultyBtn);
         this.add(teambtn);
         this.add(registerbtn);
         this.add(loginbtn);
