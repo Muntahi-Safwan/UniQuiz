@@ -133,7 +133,7 @@ public class ProfileDark extends JFrame{
         textField1.setFont(new Font("Verdana", Font.PLAIN, 18));
         textField1.setForeground(Color.black);
         textField1.setBackground(new Color(0xB8E4FA));
-        textField1.setText("Name");
+        textField1.setText(this.name);
         textField1.setAlignmentX(RoundedJTextField.CENTER_ALIGNMENT);
         textField1.setAlignmentY(RoundedJTextField.CENTER_ALIGNMENT);
         textField1.setHorizontalAlignment(RoundedJTextField.CENTER);
@@ -150,7 +150,7 @@ public class ProfileDark extends JFrame{
         textField2.setFont(new Font("Verdana", Font.PLAIN, 18));
         textField2.setForeground(Color.black);
         textField2.setBackground(new Color(0xB8E4FA));
-        textField2.setText("Student Id");
+        textField2.setText(this.studentId);
         textField2.setAlignmentX(RoundedJTextField.CENTER_ALIGNMENT);
         textField2.setAlignmentY(RoundedJTextField.CENTER_ALIGNMENT);
         textField2.setHorizontalAlignment(RoundedJTextField.CENTER);
@@ -166,7 +166,7 @@ public class ProfileDark extends JFrame{
         textField3.setFont(new Font("Verdana", Font.PLAIN, 18));
         textField3.setForeground(Color.black);
         textField3.setBackground(new Color(0xB8E4FA));
-        textField3.setText("Email");
+        textField3.setText(this.email);
         textField3.setAlignmentX(RoundedJTextField.CENTER_ALIGNMENT);
         textField3.setAlignmentY(RoundedJTextField.CENTER_ALIGNMENT);
         textField3.setHorizontalAlignment(RoundedJTextField.CENTER);
@@ -181,7 +181,7 @@ public class ProfileDark extends JFrame{
         textField4.setFont(new Font("Verdana", Font.PLAIN, 18));
         textField4.setForeground(Color.black);
         textField4.setBackground(new Color(0xB8E4FA));
-        textField4.setText("Department");
+        textField4.setText(this.department);
         textField4.setAlignmentX(RoundedJTextField.CENTER_ALIGNMENT);
         textField4.setAlignmentY(RoundedJTextField.CENTER_ALIGNMENT);
         textField4.setHorizontalAlignment(RoundedJTextField.CENTER);
@@ -293,10 +293,5 @@ public class ProfileDark extends JFrame{
         this.setVisible(true);
 
 
-    }
-
-    public static void main(String[] args) {
-        ProfileDark pr = new ProfileDark(new Person("23-53117-3"));
-        pr.setVisible(true);
     }
 }

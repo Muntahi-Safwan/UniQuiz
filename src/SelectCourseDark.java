@@ -47,10 +47,8 @@ public class SelectCourseDark extends JFrame {
 		profileBtn.setBorderPainted(false);
         profileBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE110();
-                
                 setVisible(false);
-                Profile o = new Profile(user);
+                ProfileDark o = new ProfileDark(user);
                 o.setVisible(true);
             }
         });
@@ -124,8 +122,6 @@ public class SelectCourseDark extends JFrame {
 		course1Btn.setBorderPainted(false);
         course1Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE110();
-                
                 setVisible(false);
                 IPDark o = new IPDark(user);
                 o.setVisible(true);
@@ -142,7 +138,6 @@ public class SelectCourseDark extends JFrame {
 		course2Btn.setBorderPainted(false);
         course2Btn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // new CSE111();
                 setVisible(false);
                 OOPDark o = new OOPDark(user);
                 o.setVisible(true);
@@ -206,68 +201,6 @@ public class SelectCourseDark extends JFrame {
         text2.setForeground(new Color(0xB8E4FA));
 
         
-        JButton button1 = new JButton("Introduction to Programming");
-        button1.setBounds(20, 360, 454, 81);
-        button1.setFont(new Font("Roboto", Font.BOLD, 20));
-        button1.setBackground(new Color(0xB8E4FA));
-        button1.setForeground(Color.black);
-        button1.setAlignmentX(JButton.CENTER_ALIGNMENT);
-        button1.setAlignmentY(JButton.CENTER_ALIGNMENT);
-        button1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                // new CSE110();
-                
-                setVisible(false);
-                IPDark o = new IPDark(user);
-                o.setVisible(true);
-            }
-        });
-
-        JButton button2 = new JButton("Object Oriented Programming 1");
-        button2.setBounds(20, 511, 454, 81);
-        button2.setFont(new Font("Roboto", Font.BOLD, 20));
-        button2.setBackground(new Color(0xB8E4FA));
-        button2.setForeground(Color.black);
-        button2.setAlignmentX(JButton.CENTER_ALIGNMENT);
-        button2.setAlignmentY(JButton.CENTER_ALIGNMENT);
-        button2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                // new CSE111();
-                setVisible(false);
-                OOPDark o = new OOPDark(user);
-                o.setVisible(true);
-            }
-        });
-
-        JButton button3 = new JButton("Data Structure");
-        button3.setBounds(542, 360, 454, 81);
-        button3.setFont(new Font("Roboto", Font.BOLD, 20));
-        button3.setBackground(new Color(0xB8E4FA));
-        button3.setForeground(Color.black);
-        button3.setAlignmentX(JButton.CENTER_ALIGNMENT);
-        button3.setAlignmentY(JButton.CENTER_ALIGNMENT);
-        button3.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                DSDark ds = new DSDark(user);
-                ds.setVisible(true);
-            }
-        });
-
-        JButton button4 = new JButton("Algorithms");
-        button4.setBounds(542, 511, 454, 81);
-        button4.setFont(new Font("Roboto", Font.BOLD, 20));
-        button4.setBackground(new Color(0xB8E4FA));
-        button4.setForeground(Color.black);
-        button4.setAlignmentX(JButton.CENTER_ALIGNMENT);
-        button4.setAlignmentY(JButton.CENTER_ALIGNMENT);
-        button4.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                AlgoDark al = new AlgoDark(user);
-                al.setVisible(true);
-            }
-        });
 
         this.add(course4Btn);
         this.add(course4BtnImg);

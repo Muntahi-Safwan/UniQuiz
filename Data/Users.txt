@@ -1,6 +1,6 @@
 23-53103-3	abdullah	CSE	Tasnuba Tabassum	tasnuba@tabassum.com	2.0
 23-53108-3	abhi	CSE	Mubin Hasan	mubin@hasan.com	2.0
 23-53107-3	oishi	CSE	Mishal Sheikh	mishal@sheikh.com	0.0
-23-53119-3	1234	CSE	Muntahi Safwan	muntahi1@safwan.com	3.75
-Student ID	Password	Department	Full Name	Email	0.0
-23-53106-3	1234	CSE	Abhi	abhi@gmail.com	0.0
+23-53119-3	1234	EEE	Fatema Tuz Zohra	fatema@asha.com	3.75
+23-53119-3	muntahi	EEE	Fatema Tuz Zohra	fatema@asha.com	3.75
+23-53119-3	1234	CSE	Muntahi Safwan	muntahi@gmail.com	3.75
